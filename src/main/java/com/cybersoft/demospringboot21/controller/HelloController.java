@@ -2,7 +2,7 @@ package com.cybersoft.demospringboot21.controller;
 
 
 // Annotation: @
-// @Controller: thông báo cho SB biết class dùng để định nghĩa đường dẫn có trả ra giao diện
+// @Controller: thông báo cho SpringBoot biết class dùng để định nghĩa đường dẫn có trả ra giao diện
 // @Restbody: chỉ trả ra text
 // @RestController: định nghĩa đường dẫn trả ra text
 
@@ -23,29 +23,19 @@ public class HelloController {
 //    public String hello() {
 //        return "Hello Spring Boot";
 //    }
-//
+
 //    @GetMapping("/loichao")
 //    public String loichao() {
 //        return "Link of Hello function";
 //    }
 
     /*
-    * /caculator => GET
-    * nhận 2 tham số soA và soB
-    * xuất kết quả tính tổng của 2 tham số
+    * Các cách khởi tạo các class lên IOC
+    * @Bean: khởi tạo class gán sẵn giá trị và thuộc tính cho từng giá trị trong class. Thường sẽ khởi tạo ở tầng Configuration
+    * @Component
+    * @Service
+    * @Repository
     * */
-
-//    @GetMapping("/caculator/{soA}/{soB}")
-//    public int tinhTong(@PathVariable int soA, @PathVariable int soB) {
-//        return soA+soB;
-//    }
-
-//    @RequestParam: Sẽ lấy tham số cho phương thức GET, POST
-//    @GetMapping("/caculator")
-//    public int index(@RequestParam int soA, @RequestParam int soB){
-//        return soA + soB;
-//    }
-
 
 
 //    @Autowired: lấy class lưu trữ trên IOC xuống sử dụng
