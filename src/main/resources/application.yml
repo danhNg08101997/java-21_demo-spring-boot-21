@@ -1,0 +1,4 @@
+# Nơi khai báo thông tin cấu hình và giá trị cấu hình cho các thư viện được sử dụng trong dự án
+
+#server:
+#  port: 8081
