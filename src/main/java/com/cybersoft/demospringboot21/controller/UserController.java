@@ -36,6 +36,4 @@ public class UserController {
 
         return new ResponseEntity<>(userModel, HttpStatus.OK);
     }
-
-
 }
