@@ -2,8 +2,10 @@ package com.cybersoft.demospringboot21.controller;
 
 
 // Annotation: @
+
 // @Controller: thông báo cho SpringBoot biết class dùng để định nghĩa đường dẫn có trả ra giao diện
 // @Restbody: chỉ trả ra text
+
 // @RestController: định nghĩa đường dẫn trả ra text
 
 import com.cybersoft.demospringboot21.model.UserModel;
@@ -19,24 +21,13 @@ import java.util.List;
 @RequestMapping("/hello")
 public class HelloController {
 
-//    @GetMapping("")
-//    public String hello() {
-//        return "Hello Spring Boot";
-//    }
-
-//    @GetMapping("/loichao")
-//    public String loichao() {
-//        return "Link of Hello function";
-//    }
-
-    /*
+    /* DEPENDENCES INJECTION:
     * Các cách khởi tạo các class lên IOC
     * @Bean: khởi tạo class gán sẵn giá trị và thuộc tính cho từng giá trị trong class. Thường sẽ khởi tạo ở tầng Configuration
     * @Component
     * @Service
     * @Repository
     * */
-
 
 //    @Autowired: lấy class lưu trữ trên IOC xuống sử dụng
     @Autowired
